@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bananaa</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Courier New', Courier, monospace;
+        }
+        .body{
+            height: 100vh;
+            width: 100%;
+        }
+        #nav{
+            background-color: rgb(240, 232, 144);
+            display:flex ;
+            justify-content:center;
+            padding: 20px;
+        }
+        #input{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(248, 249, 191);
+            padding: 10px;
+        }
+        #btn{
+            /* background-color:rgb(240, 232, 144); */
+            padding: 2px;
+        }
+        #output{
+            background-color: rgb(248, 249, 191);
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+        #translated{
+            background-color: white;
+            height:80px;
+            width: 115vh;
+            border: 0.5px,solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="nav">
+            <h1>MINION-SPEAKS</h1>
+        </div>
+        <br><br>
+        <div id="input">
+            <h3>Enter text to translate:</h3>
+            <br>
+            <textarea id="message" rows="6" cols="70" placeholder="type the text here"></textarea>
+            <br>
+            <button id="btn">translate to banana</button>
+        </div>
+        <br><br>
+        <div id="output">
+            <h3>Translated text here:</h3>
+            <br>
+            <div id="translated"></div>
+        </div>
+        <br><br>
+        <div id="nav">
+            <h3>Thanks for visiting, come again</h3>
+        </div>
+        
+    </div>
+    <script src="banana.js"></script>
+</body>
+</html>
